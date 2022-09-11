@@ -3,7 +3,14 @@ version: 0.2
 phases:
   install:
     commands:
-        - python -m pip install Flask
+        # Install pip
+      - sudo apt-get install python-pip
+
+      # Install dependencies needed for running tests
+      - npm install
+
+      # Upgrade AWS CLI to the latest version
+      - pip install --upgrade awscli
   build:
     commands:
       - echo Build started on `date`
