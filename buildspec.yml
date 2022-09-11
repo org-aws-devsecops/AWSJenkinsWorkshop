@@ -8,7 +8,7 @@ phases:
         #- yum install -y amazon-linux-extras-1.6.13
         #- python3.7 -m pip install --upgrade
         - python -m pip install --user
-        - python -m pip install -r requirements.txt
+        #- python -m pip install -r requirements.txt
         #- python -m pip install Flask
   build:
     commands:
