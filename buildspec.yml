@@ -7,7 +7,7 @@ phases:
     commands:
         - python --version
         - python3.7 --version
-        - python3.7 -m pip install Flask
+        - sudo python -m pip install Flask
   build:
     commands:
       - echo Build started on `date`
