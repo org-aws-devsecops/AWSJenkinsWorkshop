@@ -2,15 +2,19 @@ version: 0.2
 
 phases:
   install:
+    runtime-versions:
+       python: 3.7
     commands:
-        - alias python='/usr/bin/python3.7'
-        - . ~/.bashrc
         - python --version
         #- python -m pip3 install Flask
-        - python3 -m pip install pip --upgrade
+        #- python3 -m pip install pip --upgrade
         #- sudo yum install python3-pip
         #- pip install --upgrade pip
         #- pip install --upgrade awscli
+  pre_build:
+    commands:
+      - pip install -r requirements.txt
+      - pip install -e .
   build:
     commands:
       - echo Build started on `date`
