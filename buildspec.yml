@@ -3,14 +3,11 @@ version: 0.2
 phases:
   install:
     commands:
-        - echo Install
-        #- python -m pip install Flask
-        #- python37 -m pip install -r requirements.txt --user
+        - python -m pip install Flask
   build:
     commands:
       - echo Build started on `date`
       - echo Compiling the Python code...
-      #- python test_app.py
   post_build:
     commands:
       - echo Build completed on `date`
