@@ -5,6 +5,7 @@ phases:
     commands:
         - echo Install
         #- python -m pip install Flask
+        - python37 -m pip install -r requirements.txt --user
   build:
     commands:
       - echo Build started on `date`
